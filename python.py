@@ -1,32 +1,36 @@
-""" Python Simple Calculator """
+import numpy
 
 # Setting all values to 0 (empty, nothing)
-output = 0
-num1 = ""
-operation = ""
-num2 = ""
+result = 0
+height = ""
+weight = ""
+
+arr = [18.5, 23, 25]
 
 # Asking What numbers you want using print command
-num1 = input("Hello, What is your First Number?\n")
-operation = input("Operation (+, -, *, /)?\n")
-num2 = input("Your Second Number?\n")
+height = input("What is your height?\n")
+weight = input("What is your weight\n")
 
 # Setting asked numbers to float, so that it would give an exact answer
-floatnum1 = float(num1)
-floatnum2 = float(num2)
+floatheight = float(height)
+floatweight = float(weight)
 
 # If selected operation is the following then do the following
-if operation == "+":
-    output=floatnum1+floatnum2
-if operation == "-":
-    output=floatnum1-floatnum2
-if operation == "*":
-    output=floatnum1*floatnum2
-if operation == "/":
-    output=floatnum1/floatnum2
-if operation == "+" or operation == "-" or operation == "/" or operation == "*":
-    print("Your Answer: "+str(output))
+result = (floatweight / (floatheight * floatheight * 0.01)) * 100
 
-# If none of above is the operation then give a error
-else:
-    print("Your operation is invalid, please try again!")
+print("Your BMI: " + str(result))
+
+if result < arr[0]:
+	print("You underweight\n")
+
+elif (result > arr[0]) & (result < arr[1]):
+	print("You normalweight\n")
+
+elif (result > arr[1]) & (result < arr[2]):
+	print("You overweight\n")
+
+elif result > arr[2]:
+	print("You obesity\n")
+
+else :
+	print("Error try again\n")
