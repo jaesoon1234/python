@@ -1,1 +1,1 @@
-# python
+# python으로 구현한 BMI 계산기
