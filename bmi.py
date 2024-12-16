@@ -55,11 +55,11 @@ while True:
     if float(fresult) < arr[0]:
         print("당신은 저체중입니다.\n")
      
-    # result가 arr[0]에 해당하는 18.5보다 크고, arr[1]에 해당하는 23보다 작으면 출력한다. &를 사용하여 두 조건 모두 만족해야한다.
+    # result가 arr[0]에 해당하는 18.5보다 크고, arr[1]에 해당하는 23보다 작으면 출력한다. and를 사용하여 두 조건 모두 만족해야한다.
     elif (float(fresult) > arr[0]) and (float(fresult) < arr[1]):
         print("당신은 정상체중입니다.\n")
 
-    # result가 arr[1]에 해당하는 23보다 크고, arr[2]에 해당하는 25보다 작으면 출력한다. &를 사용하여 두 조건 모두 만족해야한다.
+    # result가 arr[1]에 해당하는 23보다 크고, arr[2]에 해당하는 25보다 작으면 출력한다. and를 사용하여 두 조건 모두 만족해야한다.
     elif (float(fresult) > arr[1]) and (float(fresult) < arr[2]):
         print("당신은 과체중입니다.\n")
 
